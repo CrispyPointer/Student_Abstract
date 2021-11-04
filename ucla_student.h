@@ -16,8 +16,7 @@ class ucla_student : public student {
                 void get_info(std::string input);
     protected:
                 std::string fgen;
-                std::vector<student* > st_vec;
-                student* st;
+                student* st = nullptr;
 };
 
 #endif

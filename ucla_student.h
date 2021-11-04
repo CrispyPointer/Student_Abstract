@@ -12,11 +12,8 @@ class ucla_student : public student {
                 std::string get_name();
                 std::string get_birth();
                 std::string get_gender();
-                std::string get_fgen();
+                std::string get_mark();
                 void get_info(std::string input);
-    protected:
-                std::string fgen;
-                student* st = nullptr;
 };
 
 #endif

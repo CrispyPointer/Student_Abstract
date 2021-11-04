@@ -4,6 +4,7 @@
 using namespace std;
 
 ucla_student::ucla_student(){
+    
 }
 
 string ucla_student::get_name(){
@@ -18,8 +19,8 @@ string ucla_student::get_gender(){
     return gender;
 }
 
-string ucla_student::get_fgen(){
-    return fgen;
+string ucla_student::get_mark(){
+    return mark;
 }
 
 void ucla_student::get_info(string input){
@@ -32,5 +33,5 @@ void ucla_student::get_info(string input){
     pos = input.find(ch);
     birth = input.substr(0,pos);
     input = input.erase(0,birth.length()+1);
-    fgen = input.substr(0,1);
+    mark = input.substr(0,1);
 }

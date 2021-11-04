@@ -8,13 +8,16 @@
 
 class ucla_student : public student {
     public:
+                ucla_student();
                 std::string get_name();
                 std::string get_birth();
                 std::string get_gender();
                 std::string get_fgen();
-                std::vector<student* > ucla_st;
-                void get_info();
-                void add_student(student st);
+                void get_info(std::string input);
+    protected:
+                std::string fgen;
+                std::vector<student* > st_vec;
+                student* st;
 };
 
 #endif
